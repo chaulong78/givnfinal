@@ -12,7 +12,7 @@
     <artifactId>givn</artifactId>
     <version>1.0.1</version>
     <name>givnfinal</name>
-    <!--<packaging>war</packaging>-->
+    <packaging>war</packaging>
     <description>Fucking final project</description>
 
     <properties>
@@ -230,14 +230,14 @@
                     </execution>
                 </executions>
             </plugin>
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>2.19.1</version>
-                <configuration>
-                    <testFailureIgnore>true</testFailureIgnore>
-                </configuration>
-            </plugin>
+            <!--<plugin>-->
+                <!--<groupId>org.apache.maven.plugins</groupId>-->
+                <!--<artifactId>maven-surefire-plugin</artifactId>-->
+                <!--<version>2.19.1</version>-->
+                <!--<configuration>-->
+                    <!--<testFailureIgnore>true</testFailureIgnore>-->
+                <!--</configuration>-->
+            <!--</plugin>-->
         </plugins>
         <pluginManagement>
             <plugins>
