@@ -12,6 +12,7 @@
     <artifactId>givn</artifactId>
     <version>1.0.1</version>
     <name>givnfinal</name>
+    <packaging>war</packaging>
     <description>Funcking final project</description>
 
     <properties>
