@@ -1,9 +1,5 @@
 package com.msp.givn.entity;
 
-import lombok.Data;
-import javax.persistence.*;
-import javax.validation.constraints.NotNull;
-
 //@Entity
 //@Table(name = "user")
 //@Data
