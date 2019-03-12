@@ -1,5 +1,7 @@
 runtime: java
 env: flex
+beta_settings:
+  cloud_sql_instances: getinsweb:asia-south1:getinsvn=tcp:3306
 handlers:
   - url: /.*
     script: this field is required, but ignored
