@@ -13,15 +13,19 @@
     <version>1.0.1</version>
     <name>givnfinal</name>
     <packaging>war</packaging>
-    <description>Funcking final project</description>
+    <description>Fucking final project</description>
 
     <properties>
         <java.version>1.8</java.version>
-        <maven.compiler.source>1.8</maven.compiler.source> <!-- REQUIRED -->
-        <maven.compiler.target>1.8</maven.compiler.target> <!-- REQUIRED -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <appengine.maven.plugin>1.3.2</appengine.maven.plugin>
         <spring-cloud.version>Greenwich.SR1</spring-cloud.version>
+        <INSTANCE_CONNECTION_NAME>getinsweb:asia-south1:getinsvn</INSTANCE_CONNECTION_NAME>
+        <user>root</user>
+        <password>long1778</password>
+        <database>getinsvn</database>
     </properties>
 
     <dependencies>
@@ -60,8 +64,9 @@
         <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
-            <scope>runtime</scope>
+            <version>8.0.15</version>
         </dependency>
+
         <dependency>
             <groupId>com.google.cloud.sql</groupId>
             <artifactId>mysql-socket-factory-connector-j-8</artifactId>
@@ -155,6 +160,12 @@
     </dependencyManagement>
 
     <build>
+        <resources>
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
         <plugins>
             <plugin>
                 <groupId>org.springframework.boot</groupId>
