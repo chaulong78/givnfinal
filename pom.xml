@@ -12,7 +12,7 @@
     <artifactId>givn</artifactId>
     <version>1.0.1</version>
     <name>givnfinal</name>
-    <packaging>war</packaging>
+    <packaging>jar</packaging>
     <description>Fucking final project</description>
 
     <properties>
