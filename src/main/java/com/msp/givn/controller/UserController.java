@@ -9,7 +9,7 @@ public class UserController {
 
     @GetMapping(value = "/")
     public ModelAndView showUser(){
-        ModelAndView modelAndView = new ModelAndView("home");
+        ModelAndView modelAndView = new ModelAndView("/home.jsp");
 
         return modelAndView;
     }
