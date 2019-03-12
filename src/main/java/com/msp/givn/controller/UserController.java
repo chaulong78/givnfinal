@@ -17,8 +17,8 @@ public class UserController {
     public ModelAndView showUser(){
         ModelAndView modelAndView = new ModelAndView("home");
 
-        User user = userRepository.findById(1);
-        modelAndView.addObject("user", user);
+//        User user = userRepository.findById(1);
+//        modelAndView.addObject("user", user);
 
         return modelAndView;
     }
